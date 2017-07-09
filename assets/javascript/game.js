@@ -178,8 +178,22 @@ function win() {
 }
 
 
+//OTHER 
+
+function hov() {
+	$('img').hover(
+		function() {
+			$(this).stop().fadeTo('slow', 0.3);
+	}, 
+
+		function() {
+			$(this).stop().fadeTo('slow', 1);
+	})
+}
+
 //CALL FUNCTIONS
 click1();
 click2();
 click3();
 click4();
+hov();

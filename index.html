@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Crystal Game</title>
+	<title>Card Collector</title>
 	
 	<!-- JQUERY LINK -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -10,57 +10,69 @@
 	<!-- BOOTSTRAP LINK -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
 
+	<link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 
 </head>
 <body>
 
 <div class=".container-fluid header">
-<h1>Crystal Game</h1>
+<h1>Card Collector</h1>
 </div>
 
 <div class="row mainContainer">
 
-	<section class="col-md-6 instructions">
+	<section class="col-md-5 instructions">
 		
 		<h2>Instructions</h2>
 		<p>You will be given a random number at the start of the game.</p>
-		<p>There are four crystals below. By clicking on a crystal you
+		<p>There are cards. By clicking on a card you
 		will add a specific amount of points to your total score.</p>
 		<p>You win the game by matching your total score to the random number.
 		You lose the game if your total score goes above the random number.</p>
-		<p>The value of each crystal is hiden from you until you click on it.</p>
-		<p>Each time the game starts, the values of each of the crystals will change.</p>
+		<p>The value of each card is hiden from you until you click on it.</p>
+		<p>Each time the game starts, the values of each of the card will change.</p>
 
 	</section>
+	
+	<div class="col-md-1 spacer"></div>
 
 	<section class="col-md-6 gameContainer">
 
-		<div class="cont1">
+		<h2>Play the Game!</h2>
+
+
+		<div class="row">
+		<div class="col-md-6 cont1">
+			<p>Your random number is:</p>
 			<p id="randomNumber"></p>
 		</div>
 
-		<div class="row cont2">
+		<div class="col-md-6 cont2">
+			<p>Your total score is:</p>
+			<p id="totalScore"></p>
+		</div>
+		</div>
+
+
+		<div class="cont3">
+			<img id="pic1" src="assets/images/1.png" alt="1">
+			<img id="pic2" src="assets/images/2.jpg" alt="2">
+			<img id="pic3" src="assets/images/3.png" alt="3">
+			<img id="pic4" src="assets/images/4.png" alt="4">
+		</div>
+
+		<div class="row cont4">
 			<div class="col-md-6">
 				<p id="wins"></p>
 			</div>
 			<div class="col-md-6">
 				<p id="losses"></p>
 			</div>
-		</div>
-
-		<div class="cont3">
-			<img id="pic1" src="" alt="1">
-			<img id="pic2" src="" alt="2">
-			<img id="pic3" src="" alt="3">
-			<img id="pic4" src="" alt="4">
-		</div>
-
-		<div class="cont4">
-			<p>Your total score is:</p>
-			<p id="totalScore"></p>
-		</div>
+		</div>		
 
 	</section>
 

@@ -1,0 +1,54 @@
+h1 {
+	font-size: 4em;
+}
+
+body {
+	background: url("../images/sakura.png");
+}
+
+.header {
+	font-family: 'Monoton', cursive;
+
+	text-align: center;
+	padding: 10px;
+	margin-bottom: 20px;
+
+	background-color: #fff;
+}
+
+.mainContainer {
+	width: 95%;
+	margin: auto;
+}
+
+.instructions {
+	border: 2px dashed;
+	padding: 0px 20px 20px 20px;
+
+	background-color: rgba(255, 255 ,255, .5);
+
+}
+
+.gameContainer {
+	border: 2px dashed;
+	padding: 0px 20px 20px 20px;
+
+	background-color: rgba(255, 255 ,255, .5);
+}
+
+.spacer {
+	width: 2%;
+}
+
+#randomNumber, #totalScore {
+	font-size: 2em;
+}
+
+img {
+	width: 24.48%;
+}
+
+.cont3 {
+	margin: auto;
+	margin-bottom: 10px;
+}
